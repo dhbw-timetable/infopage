@@ -1,228 +1,324 @@
-<!DOCTYPE = html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>DHWB-Timetable</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" title="DHBW-Timetable"></meta>
-  </head>
-  <body>
+   <head>
+      <title>DHWB-Timetable</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="manifest.json">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8" title="DHBW-Timetable">
+      </meta>
+   </head>
+   <body>
       <div class="container">
-        <div class="header">
-          <a href="index.html">
-            <svg class="header__logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-            </svg>
-          </a>
-          <ul class="header__menu" onclick="">
-            <a href="#support"><li class="header__menu--item">support</li></a>
-            <a href="#download"><li class="header__menu--item">Download</li></a>
-            <a href="#design"><li class="header__menu--item">Design</li></a>
-            <a href="#features"><li class="header__menu--item">Features</li></a>
-            <a href="#webapp"><li class="header__menu--item">Web</li></a>
-          </ul>
-        </div>
-        <div class="content-box content-box--image image-welcome">
-          <h1 class="content-box__header">Rapla war gestern.</h1>
-          <div class="content-box__body">
-            <button class="button button--primary js-scroll-button">Los geht's!</button>
-          </div>
-          <div class="content-box__footer"></div>
-        </div>
-        <div id="letsgo" class="content-box solid">
-          <h2 class="content-box__header content-box--solid-accent">Jetzt kommt DHBW-Timetable!</h2>
-          <div class="content-box__body">
-                    <p class="content-box__text">DHBW-Timetable ist ein von Studenten aus Stuttgart gegründetes Projekt, mit der du deinen Stundenplan auf all deinen Geräten produtiv nutzen kannst. Es ruft die rapla Seite unter&nbsp;<a class="link" href="https://rapla.dhbw-stuttgart.de/">https://rapla.dhbw-stuttgart.de/</a>&nbsp;auf und stellt die Daten offline für verschiedene Funktionen zur Verfügung. Auch ohne iCal-Export. Also nie wieder Vorlesungen in den Kalender abtippen!
-          <br><br>
-          Füge einfach nur deinen von der DHBW erhaltenen Link beim ersten Benutzer einer unserer Applikationen ein und anschließend lädt sich deinen Stundenplan von selber herunter. <br>Egal ob du morgens automatisiert geweckt werden willst, gerne ein sauberes Design vor dir hast oder über Änderungen informiert werden möchtest - DHBW-Timetable ist die Lösung.
-          <br><br>
-          Und das Beste: DHBW-Timetable befindet sich in stetiger Entwicklung und ist Open Source. Whohoo! Wir freuen uns riesig über Feedback und Hilfe. Erst durch euch, kann die App perfekt werden!</p>
+         <div class="header">
+            <a href="index.html">
+               <svg class="header__logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+               </svg>
+            </a>
+            <ul class="header__menu" onclick="">
+               <a href="#support">
+                  <li class="header__menu--item">Support</li>
+               </a>
+               <a href="#download">
+                  <li class="header__menu--item">Download</li>
+               </a>
+               <a href="#features">
+                  <li class="header__menu--item">Mobile</li>
+               </a>
+               <a href="#webapp">
+                  <li class="header__menu--item">Web</li>
+               </a>
+            </ul>
+         </div>
+         <div class="content-box content-box--image image-welcome">
+            <h1 class="content-box__header">Rapla war gestern.</h1>
+            <div class="content-box__body">
+               <button class="button button--primary js-scroll-button">Los geht's</button>
+            </div>
+         </div>
+         <div id="letsgo" class="content-box solid">
+            <h2 class="content-box__header content-box--solid-accent">Jetzt kommen wir!</h2>
+            <div class="content-box__body">
+               <p class="content-box__text">DHBW-Timetable ist ein von Studenten aus Stuttgart gegründetes Projekt, mit der du deinen Stundenplan auf all deinen Geräten produtiv nutzen kannst. Es ruft die rapla Seite unter&nbsp;<a class="link" href="https://rapla.dhbw-stuttgart.de/">https://rapla.dhbw-stuttgart.de/</a>&nbsp;oder&nbsp;<a class="link" href="https://rapla.dhbw-karlsruhe.de/">https://rapla.dhbw-karlsruhe.de/</a>&nbsp;auf und stellt die Daten offline für verschiedene Funktionen zur Verfügung. Auch ohne iCal-Export. Also nie wieder Vorlesungen in den Kalender abtippen!
+                  <br><br>
+                  Füge einfach nur deinen von der DHBW erhaltenen Link beim ersten Benutzer einer unserer Applikationen ein und anschließend lädt sich deinen Stundenplan von selber herunter. <br>Egal ob du morgens automatisiert geweckt werden willst, gerne ein sauberes Design vor dir hast oder über Änderungen informiert werden möchtest - DHBW-Timetable ist die Lösung.
+                  <br><br>
+                  Und das Beste: DHBW-Timetable befindet sich in stetiger Entwicklung und ist Open Source. Whohoo! Wir freuen uns riesig über Feedback und Hilfe. Erst durch euch, kann die App perfekt werden!
+               </p>
+            </div>
+         </div>
+         <div id="webapp" class="content-box content-box--solid content-box--solid-standard">
+            <h2 class="content-box__header">Web App</h2>
+            <div class="content-box__body">
+               <p class="content-box__text">Deinen Stundenplan effizient abzurufen ist jetzt noch einfacher. Unser neustes <a class="link" href="https://github.com/dhbw-timetable/rablabla">Projekt Rablabla<a> stellt dir deine Vorlesungen in modernem Design direkt im Browser bereit. Ohne Installationen, ohne Probleme.<br><br>Absofort kannst du auch, wenn es deine DHBW nicht unterstützt deinen ICS Kalendar abonnieren. Rufe ihn einfach über unsere Web App ab.<br><br><a href="https://rablabla.mybluemix.net" class="link">Zeigs mir!</a></p>
+            </div>
+            <div class="content-box__body">
+               <div class="grid">
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="innovativ_web">
+                        <img src="img/images/innovativ_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Innovativ</h6>
+                     <p class="content-box__text">Neu, übersichtlich und intuitiv. Rablabla ist in der Digitalen Ära angekommen.</p>
                   </div>
-          <div class="content-box__footer">
-          </div>
-        </div>
-        <div id="webapp" class="content-box content-box--solid content-box--solid-standard">
-          <h2 class="content-box__header">Web App</h2>
-          <div class="content-box__body">
-                    <p class="content-box__text">Deinen Stundenplan effizient abzurufen ist jetzt noch einfacher. Unser neustes <a class="link" href="https://github.com/dhbw-timetable/rablabla">Projekt rablabla<a> stellt dir deine Vorlesungen in modernem Design direkt im Browser bereit. Ohne Installationen, ohne Probleme.<br><br>Absofort kannst du auch, wenn es deine DHBW nicht unterstützt deinen ICS Kalendar abonnieren. Rufe ihn einfach über unsere Web App ab.<br><br><a href="https://rablabla.mybluemix.net" class="link">Ausprobieren</a></p>
-                  </div><div class="content-box__body">
-            <div class="grid">
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="ics">
-                  <img src="img/images/screenshot_ics_square.png" class="image-block">
-                </div>
-                <h6 class="description">ICS</h6>
-                <p class="content-box__text">Jedes Kalenderprogramm. Jederzeit. Die .ics Dateien werden regelmäßig generiert und sind online verfügbar.</p>
-              </div>
+									<div class="grid-3rd">
+										 <div class="image-block__mask js-grow-image" target="responsiv_web">
+												<img src="img/images/responsiv_square.png" class="image-block">
+										 </div>
+										 <h6 class="description">Responsiv</h6>
+										 <p class="content-box__text">Auf jedem Gerät. Smartphone, Tablet, Laptop, oder Desktop - dein Stundenplan sieht smart aus.</p>
+									</div>
+									<div class="grid-3rd">
+										 <div class="image-block__mask js-grow-image" target="kognitiv_web">
+												<img src="img/images/kognitiv_square.png" class="image-block">
+										 </div>
+										 <h6 class="description">Kognitiv</h6>
+										 <p class="content-box__text">Du willst deinem Hallo sagen? Ihn nach deinen Vorlesungen fragen? Bitteschön.</p>
+									</div>
+               </div>
             </div>
-          </div>
-          <div class="content-box__footer">
-          </div>
-        </div>
-        <div id="features" class="content-box content-box--solid content-box--solid-accent">
-          <h2 class="content-box__header">App Features</h2>
-          <div class="content-box__body">
-            <div class="grid">
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="alarm">
-                  <img src="img/images/screenshot_alarm_square.png" class="image-block">
-                </div>
-                <h6 class="description">Wecker</h6>
-                <p class="content-box__text">Du schaust jeden Abend, wann du morgen raus musst? Entspann dich, wir sagen dir schon rechtzeitig bescheid.</p>
-              </div>
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="offline">
-                  <img src="img/images/screenshot_week_square.png" class="image-block">
-                </div>
-                <h6 class="description">Offline</h6>
-                <p class="content-box__text">Rapla ist jetzt offline. Nie wieder Probleme mit Serverwartungen oder dem Internet in der Bahn.</p>
-              </div>
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="notifications">
-                  <img src="img/images/screenshot_notifications_square.png" class="image-block">
-                </div>
-                <h6 class="description">Änderungsalarm</h6>
-                <p class="content-box__text">Wir erstatten Meldung, wenn sich etwas ändert.
-              </p></div>
+						<div class="content-box content-box--solid content-box--solid-standard">
+	             <div class="content-box__body">
+	                <div class="grid">
+	                   <div class="grid-3rd">
+	                      <div class="image-block__mask js-grow-image" target="ics_web">
+	                         <img src="img/images/ics_square.png" class="image-block">
+	                      </div>
+	                      <h6 class="description">ICS</h6>
+	                      <p class="content-box__text">Jedes Kalenderprogramm. Jederzeit. Die .ics Dateien werden regelmäßig generiert und sind online verfügbar.</p>
+	                   </div>
+	 									 <div class="grid-3rd">
+	 										 <div class="image-block__mask js-grow-image" target="offline_web">
+	 												<img src="img/images/offline_square.JPG" class="image-block">
+	 										 </div>
+	 										 <h6 class="description">Offline</h6>
+	 										 <p class="content-box__text">Kein Internet unterwegs? Egal, hast du unsere Daten abgerufen sind sie verfügbar, solange du sie brauchst.</p>
+	 									 </div>
+	                </div>
+	             </div>
+	          </div>
+         </div>
+         <div id="features" class="content-box content-box--solid content-box--solid-accent">
+            <h2 class="content-box__header">Mobile App</h2>
+						<div class="content-box__body">
+							 <p class="content-box__text">Du möchtest deinen Stundenplan noch näher bei dir haben? Wir haben eine native Android App entwickelt, die von allen Vorteilen des Android Systems Gebrauch macht. Sie synchronisiert sich automatisch im Hintergrund und bietet dir schnellen Überblick über beliebig viele Offlinedaten.</p>
+						</div>
+            <div class="content-box__body">
+               <div class="grid">
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="today">
+                        <img src="img/images/screenshot_today_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Nur ein Blick</h6>
+                     <p class="content-box__text">Alles was du brauchst, direkt verfügbar. Kein zoomen, kein scrollen.</p>
+                  </div>
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="offline">
+                        <img src="img/images/screenshot_week_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Offline</h6>
+                     <p class="content-box__text">Rapla ist jetzt offline. Nie wieder Probleme mit Serverwartungen oder dem Internet in der Bahn.</p>
+                  </div>
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="notifications">
+                        <img src="img/images/screenshot_notifications_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Änderungsalarm</h6>
+                     <p class="content-box__text">Wir erstatten Meldung, wenn sich etwas ändert.
+                     </p>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="content-box__footer">
-          </div>
-        </div>
-        <div id="design" class="content-box content-box--solid content-box--solid-standard">
-          <h2 class="content-box__header">Design</h2>
-          <div class="content-box__body">
-            <div class="grid">
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="today">
-                  <img src="img/images/screenshot_today_square.png" class="image-block">
-                </div>
-                <h6 class="description">Nur ein Blick</h6>
-                <p class="content-box__text">Alles was du brauchst, direkt verfügbar. Kein zoomen, kein scrollen.</p>
-              </div>
-              <div class="grid-3rd">
-                <div class="image-block__mask js-grow-image" target="dark">
-                  <img src="img/images/screenshot_dark_square.png" class="image-block">
-                </div>
-                <h6 class="description">Material Design</h6>
-                <p class="content-box__text">Rapla ist zweckmäßig.<br>Wir auch - und sogar noch schön!</p>
-              </div>
+         </div>
+         <div class="content-box content-box--solid content-box--solid-accent">
+            <div class="content-box__body">
+               <div class="grid">
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="alarm">
+                        <img src="img/images/screenshot_alarm_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Wecker</h6>
+                     <p class="content-box__text">Du schaust jeden Abend, wann du morgen raus musst? Entspann dich, wir sagen dir schon rechtzeitig bescheid.</p>
+                  </div>
+                  <div class="grid-3rd">
+                     <div class="image-block__mask js-grow-image" target="dark">
+                        <img src="img/images/screenshot_dark_square.png" class="image-block">
+                     </div>
+                     <h6 class="description">Material Design</h6>
+                     <p class="content-box__text">Rapla ist zweckmäßig.<br>Wir auch - und sogar noch schön!</p>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="content-box__footer">
-          </div>
-        </div>
-        <div id="download" class="content-box content-box--solid content-box--solid-accent">
-          <h2 class="content-box__header">Download</h2>
-          <div class="content-box__body">
-            <div class="grid">
-              <div class="grid-3rd">
-                <div class="image-block__mask">
-                   <img class="image-block" style="opacity: 0.6" src="img/icons/download.svg">
-                </div>
-                <h6 class="description"><img src="img/icons/logo.svg" />   DHBW-Timetable ist jetzt verfügbar!</h6>
-                <p class="content-box__text">Unsere App gibt es im Google Play Store und bald auch im Apple Appstore.</p>
-              </div>
+         </div>
+         <div id="download" class="content-box content-box--solid content-box--solid-standard">
+            <h2 class="content-box__header">Was willst du haben?</h2>
+            <div class="content-box__body">
+               <div class="grid">
+                  <div class="grid-3rd">
+                     <div>
+                        <img style="display: inline-block; width: 128px; height: 128px" src="img/icons/logo.svg">
+                     </div>
+                     <h6 style="font-size: 24px" class="description">DHBW-Timetable</h6>
+                     <p class="content-box__text">Unsere App gibt es im offiziellen Google Play Store.</p>
+                     <a href="https://play.google.com/store/apps/details?id=dhbw.timetable"><img width="190px" height="80px" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a>
+                  </div>
+                  <div class="grid-3rd">
+                     <div>
+                        <img style="display: inline-block; width: 128px; height: 128px; fill: #ba3838" src="img/icons/rablabla_black.svg">
+                     </div>
+                     <h6 style="font-size: 24px" class="description">Rablabla</h6>
+                     <p class="content-box__text">Rablabla ist online und direkt verfügbar in deinem Browser.</p>
+                     <a target="_blank" style="padding-top: 10px" href="https://rablabla.mybluemix.net"><button class="button button--primary js-scroll-button">Zeigs mir</button></a>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="content-box__footer">
-            <a href="https://play.google.com/store/apps/details?id=dhbw.timetable"><img width="190px" height="80px" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a>
-          </div>
-        </div>
-        <div id="support" class="content-box content-box--solid content-box--solid-standard">
-          <h2 class="content-box__header">Support</h2>
-          <div class="content-box__body">
-            <p class="content-box__text">Du möchtest ein Problem melden oder hast bei etwas Schwierigkeiten? Wir tun unser bestes um unsere Produkte möglichst fehlerfrei auszuliefern, doch leider klappt dies nicht immer. Dazu brauchen wir dein Feedback. Erstelle einfach einen neuen Eintrag unter <a class="link" href="https://github.com/dhbw-timetable/">GitHub Issues</a> oder schreib uns direkt!<br></p>
-          </div>
-          <h6 class="description">Mithelfen?</h6>
-          <div class="content-box__body">
-            <p class="content-box__text">Unser Code ist Open-Source, das heißt jeder kann ihn sehen und benutzen. Wir hosten ihn und diese Website auf <a class="link" href="https://github.com/dhbw-timetable">GitHub</a>. Du kannst ja mal reinschauen!<br><br>Wir sind immer auf der Suche nach Testern, Programmierern und Designern. Du hast Lust deinen Teil zu diesem Projekt beizutragen? Gar kein Problem! Zusammen können wir einiges schaffen!</p>
-          </div>
-          <div class="content-box__footer">
-            <p class="content-box__text"><a class="link" href="https://play.google.com/apps/testing/dhbw.timetable">Hier</a> kannst du Betatester für unsere App werden.</p>
-            <h6 class="description">Oder Kontaktiere uns unter:</h6>
-            <p class="content-box__text"><a href="mailto:hendrikulbrich@outlook.de"><button class="button button--flat">hendrikulbrich@outlook.de</button></a> oder <a class="link" href="mailto:malte.bartels@live.de"><button class="button button--flat">malte.bartels@live.de</button></a></p>
-          </div>
-        </div>
+            <div class="content-box__footer">
+            </div>
+         </div>
+         <div id="support" class="content-box content-box--solid content-box--solid-accent" style="padding: 30px 0 0 0">
+            <h2 class="content-box__header">Support</h2>
+            <div class="content-box__body">
+               <p class="content-box__text">Du möchtest ein Problem melden oder hast bei etwas Schwierigkeiten? Wir tun unser bestes um unsere Produkte möglichst fehlerfrei auszuliefern, doch leider klappt dies nicht immer. Deswegen kannst du uns bescheid sagen, wenn du eine Frage hast oder wir etwas verbessern können.<br></p>
+            </div>
+            <iframe class="feedback_frame" style="padding-top: 30px" src="https://docs.google.com/forms/d/e/1FAIpQLSenjechMYI0tsWSYNHcC8qGlJLt8T_5RTtiskBejGa_qZDpBw/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Wird geladen...</iframe>
+         </div>
+         <div id="mithelfen" class="content-box content-box--solid content-box--solid-accent">
+            <h2 class="content-box__header">Mithelfen?</h2>
+            <div class="content-box__body">
+               <p class="content-box__text">Unser Code ist Open-Source, das heißt jeder kann ihn sehen und benutzen. Wir hosten ihn und diese Website auf <a class="link" href="https://github.com/dhbw-timetable">GitHub</a>. Du kannst ja mal reinschauen!<br><br>Wir sind immer auf der Suche nach Testern, Programmierern und Designern. Du hast Lust deinen Teil zu diesem Projekt beizutragen? Gar kein Problem! Zusammen können wir einiges schaffen!</p>
+            </div>
+            <div class="content-box__footer">
+               <p class="content-box__text">
+                  Die DHBW-Timetable App unterstützt das <a target="_blank" class="link" href="https://play.google.com/apps/testing/dhbw.timetable">Google Beta Program</a>.
+                  <br />Rablabla besitzt ein eigenes <a target="_blank" class="link" href="https://rablabla-staging.mybluemix.net/">Open Beta Program</a>.
+                  <br /><br />
+               </p>
+               <h6 class="description">Oder Kontaktiere uns unter:</h6>
+               <p class="content-box__text"><a href="mailto:hendrikulbrich@outlook.de"><button class="button button--flat">hendrikulbrich@outlook.de</button></a> oder <a class="link" href="mailto:malte.bartels@live.de"><button class="button button--flat">malte.bartels@live.de</button></a></p>
+            </div>
+         </div>
       </div>
-
-      <div class="modal grid" name="offline">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_week.png">
-          </div>
-          <div class="grid-3rd">
-            <h6 class="description">Offline</h6>
-            <p class="content-box__text">Rapla ist jetzt offline. <br>Nie wieder Probleme mit Serverwartungen oder dem Internet in der Bahn.</p>
-          </div>
-      </div>
-      <div class="modal grid" name="alarm">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_alarm.png">
-          </div>
-          <div class="grid-3rd">
-            <h6 class="description">Wecker</h6>
-            <p class="content-box__text">Du schaust jeden Abend, wann du morgen raus musst?<br>Entspann dich, wir sagen dir schon rechtzeitig bescheid.</p>
-          </div>
-      </div>
-      <div class="modal grid" name="notifications">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_notifications.png">
-          </div>
-          <div class="grid-3rd">
-            <h6 class="description">Änderungsalarm</h6>
-            <p class="content-box__text">Wir erstatten Meldung, wenn sich etwas ändert.</p>
-          </div>
-      </div>
-      <div class="modal grid" name="today">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_today.png">
-          </div>
-          <div class="grid-3rd">
-            <h6 class="description">Nur ein Blick</h6>
-            <p class="content-box__text">Alles, was du brauchst auf einen Blick.<br>Kein Zoomen, kein Scrollen.</p>
-          </div>
-      </div>
-      <div class="modal grid" name="dark">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_dark.png">
-          </div>
-          <div class="grid-3rd">
-            <h6 class="description">Design first</h6>
-            <p class="content-box__text">Rapla ist zweckmäßig.<br>Wir auch - und sogar noch schön!<br>(Entwurf)</p>
-          </div>
-      </div>
-      <div class="modal grid" name="ics">
-          <div class="grid-3rd">
-            <img src="img/images/screenshot_ics.png">
-          </div>
-          <div class="grid-3rd">
+			<div class="modal grid" name="ics_web">
+         <div class="grid-3rd">
+            <img src="img/images/ics.png">
+         </div>
+         <div class="grid-3rd">
             <h6 class="description">ICS</h6>
             <p class="content-box__text">Jedes Kalenderprogramm. Jederzeit. Die .ics Dateien werden regelmäßig generiert und sind online verfügbar.</p>
-          </div>
+         </div>
       </div>
-
+			<div class="modal grid" name="offline_web">
+         <div class="grid-3rd">
+            <img src="img/images/offline.JPG">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Offline</h6>
+            <p class="content-box__text">Kein Internet unterwegs? Egal, hast du unsere Daten abgerufen sind sie verfügbar, solange du sie brauchst.</p>
+         </div>
+      </div>
+			<div class="modal grid" name="kognitiv_web">
+         <div class="grid-3rd">
+            <img src="img/images/kognitiv.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Kognitiv</h6>
+            <p class="content-box__text">Du willst deinem Hallo sagen? Ihn nach deinen Vorlesungen fragen? Bitteschön.</p>
+         </div>
+      </div>
+			<div class="modal grid" name="responsiv_web">
+         <div class="grid-3rd">
+            <img src="img/images/responsiv.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Responsiv</h6>
+            <p class="content-box__text">Auf jedem Gerät. Smartphone, Tablet, Laptop, oder Desktop - dein Stundenplan sieht smart aus.</p>
+         </div>
+      </div>
+			<div class="modal grid" name="innovativ_web">
+         <div class="grid-3rd">
+            <img src="img/images/innovativ.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Innovativ</h6>
+            <p class="content-box__text">Auf jedem Gerät. Smartphone, Tablet, Laptop, oder Desktop - dein Stundenplan sieht smart aus.</p>
+         </div>
+      </div>
+      <div class="modal grid" name="offline">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_week.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Offline</h6>
+            <p class="content-box__text">Rapla ist jetzt offline. <br>Nie wieder Probleme mit Serverwartungen oder dem Internet in der Bahn.</p>
+         </div>
+      </div>
+      <div class="modal grid" name="alarm">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_alarm.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Wecker</h6>
+            <p class="content-box__text">Du schaust jeden Abend, wann du morgen raus musst?<br>Entspann dich, wir sagen dir schon rechtzeitig bescheid.</p>
+         </div>
+      </div>
+      <div class="modal grid" name="notifications">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_notifications.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Änderungsalarm</h6>
+            <p class="content-box__text">Wir erstatten Meldung, wenn sich etwas ändert.</p>
+         </div>
+      </div>
+      <div class="modal grid" name="today">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_today.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Nur ein Blick</h6>
+            <p class="content-box__text">Alles, was du brauchst auf einen Blick.<br>Kein Zoomen, kein Scrollen.</p>
+         </div>
+      </div>
+      <div class="modal grid" name="dark">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_dark.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">Material Design</h6>
+            <p class="content-box__text">Rapla ist zweckmäßig.<br>Wir auch - und sogar noch schön!</p>
+         </div>
+      </div>
+      <div class="modal grid" name="ics">
+         <div class="grid-3rd">
+            <img src="img/images/screenshot_ics.png">
+         </div>
+         <div class="grid-3rd">
+            <h6 class="description">ICS</h6>
+            <p class="content-box__text">Jedes Kalenderprogramm. Jederzeit. Die .ics Dateien werden regelmäßig generiert und sind online verfügbar.</p>
+         </div>
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/app.js"></script>
       <script src="js/script.js"></script>
-    </body>
+   </body>
 </html>
